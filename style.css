@@ -58,6 +58,7 @@ label {
 
 img {
     z-index: 2;
+    user-select: none;
 }
 
 .theme-switcher input {
@@ -163,4 +164,17 @@ body.light .container img {
 body.light .link {
     background-color: #e7e7e7;
     color: #0e0e0e;
+}
+
+@media screen and (max-width: 700px) {
+    
+    header {
+        align-items: center;
+        margin: 0;
+    }
+
+    .container {
+        min-width: 100vw;
+        border-radius: 0;
+    }
 }
